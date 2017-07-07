@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        opacity: 0.3;
+      }
+    </style>
+  </defs>
+  <path id="login-brown" class="cls-1" d="M1185,879v14a1,1,0,0,1-1,1h-7a1,1,0,1,1,0-2h6V880h-6a1,1,0,0,1,0-2h7A1,1,0,0,1,1185,879Zm-16,7a1,1,0,0,1,1-1h9a1,1,0,0,1,0,2h-9A1,1,0,0,1,1169,886Zm9,1v-2h2v2h-2Zm-2,3,4-4-4-4v8Z" transform="translate(-1169 -878)"/>
+</svg>
