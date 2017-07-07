@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Barbershop</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+	
+	<body>
+		<header class="page-header">
+			<h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+			<div class="page-header__logo">
+				<img src="img/logo.svg" 
+				width="370px" height="153px" alt="Барбершоп «Бородинский»">
+			</div>
+			<nav class="main-nav  main-nav--closed  main-nav--nojs">
+				<button class="main-nav__toggle" type="button">Открыть меню</button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__items">
+						<li class="main-nav__item"><a href="index.html">Главная</a></li>
+						<li class="main-nav__item"><a href="">Наши Работы</a></li>
+						<li class="main-nav__item  main-nav__item--active"><a>Записаться</a></li>
+						<li class="main-nav__item"><a href="">Контакты</a></li>
+						<li class="main-nav__item"><a href=""></a></li>
+					</ul>
+					<ul class="main-nav__user-items">
+						<li class="main-nav__user-item"><a href="" class="main-nav__user-login">Вход</a></li>
+					</ul>
+					<div class="log-in">
+						<h2 class="log-in__title">Личный кабинет</h2>
+						<p class="log-in__info ">Введите свой логин и пароль, чтобы войти</p>
+						
+						<form action="" class="log-form">
+							<input type="login" class="log-form__input" placeholder="Логин" required=''>
+							<input type="password" class="log-form__input" placeholder="Пароль" required=''>
+							<label class="log-form__remember">
+								<input type="radio"> Запомнить меня
+							</label>
+							<a href="#" class="log-form__forget">Я забыл Пароль!</a>
+							
+							<button type="submit" class="form-btn  log-form__submit">Войти в личный кабинет</button>
+						</form>
+					</div>
+				</div> 
+			</nav>
+		</header>
+		
+		<main class="inner-page">
+			<div class="inner-page__wrapper">
+				<section class="request">
+					<h1 class="form__title">Запись на стрижку</h1>
+					<a href="index.html" class="btn  to-main">На главную</a>
+				
+					<form action="" class="request__form">
+						<div class="about">
+							<input type="text" class="about__item  about__item--name" required='' placeholder="Имя">
+							<input type="text" class="about__item  about__item--name" required='' placeholder="Фамилия">
+							<input type="text" class="about__item  about__item--name" required='' placeholder="Отчество">
+							<input type="phone" class="about_item  about__item--phone" required='' placeholder="Контактный телефон">
+							<input type="mail" class="about__item  about__item--mail" required='' placeholder="Контактный e-mail">
+							<textarea class="about__item  about__item--textarea"> Доп.информация для мастера </textarea>
+						</div>
+						
+						<div class="choice">
+							<h2 class="choice__title">Выберите модель бороды:</h2>
+						
+							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='admiral' name='beard'>адмирал</label>
+							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='lumberjack' name='beard'>лесоруб</label>
+							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='polar' name='beard'>полярник</label>
+							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='boyar' name='beard'>боярин</label>
+							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='sapient' name='beard'>мудрец</label>
+						</div>
+
+						<div class="extra">
+							<h2 class="extra__title">Дополнительные услуги:</h2>
+							
+							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Подкрасить бороду</label>
+							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Убрать седину</label>
+							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Подровнять виски</label>
+							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Причесать бороду</label>
+							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Накрутить усы</label>
+							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Отполировать лысину</label>
+						</div>
+
+						<button class="form-btn  note-form-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+					</form>
+					
+				</section>
+			</div>
+		</main>
+		
+		<footer class="page-footer">
+			<div class="page-footer__wrapper">
+				<p class="page-footer__contacts">
+					<b>Барбершоп «Бородинский»</b><br>
+					г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+					<a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+				</p>
+				<p class="page-footer__social">
+					<span class="social-links">
+						<a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+						<a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+						<a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+					</span>
+				</p>
+				<p class="page-footer__copyright">
+					Разработано:
+					<a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+				</p>
+			</div>
+		</footer>	
+	</body>
+</html>
