@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<title>Barbershop</title>
-	<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+		<title>Barbershop</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/normalize.css">
 	</head>
 	
 	<body>
@@ -45,13 +47,13 @@
 		</header>
 		
 		<main class="inner-page">
-			<div class="inner-page__wrapper">
-				<section class="request">
-					<h1 class="form__title">Запись на стрижку</h1>
-					<a href="index.html" class="btn  to-main">На главную</a>
-				
-					<form action="" class="request__form">
-						<div class="about">
+			<section class="request">
+				<h1 class="form__title">Запись на стрижку</h1>
+				<a href="index.html" class="btn  to-main">На главную</a>
+			
+				<form action="" class="request__form">
+					<div class="about">
+						<div class="about__wrapper">
 							<input type="text" class="about__item  about__item--name" required='' placeholder="Имя">
 							<input type="text" class="about__item  about__item--name" required='' placeholder="Фамилия">
 							<input type="text" class="about__item  about__item--name" required='' placeholder="Отчество">
@@ -59,18 +61,21 @@
 							<input type="mail" class="about__item  about__item--mail" required='' placeholder="Контактный e-mail">
 							<textarea class="about__item  about__item--textarea"> Доп.информация для мастера </textarea>
 						</div>
-						
-						<div class="choice">
+					</div>
+					
+					<div class="choice">
+						<div class="choice__wrapper">
 							<h2 class="choice__title">Выберите модель бороды:</h2>
-						
 							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='admiral' name='beard'>адмирал</label>
 							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='lumberjack' name='beard'>лесоруб</label>
 							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='polar' name='beard'>полярник</label>
 							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='boyar' name='beard'>боярин</label>
 							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='sapient' name='beard'>мудрец</label>
 						</div>
+					</div>
 
-						<div class="extra">
+					<div class="extra">
+						<div class="extra__wrapper">
 							<h2 class="extra__title">Дополнительные услуги:</h2>
 							
 							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Подкрасить бороду</label>
@@ -79,13 +84,12 @@
 							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Причесать бороду</label>
 							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Накрутить усы</label>
 							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Отполировать лысину</label>
+							<button class="form-btn  note-form-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
 						</div>
-
-						<button class="form-btn  note-form-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
-					</form>
+					</div>
+				</form>
 					
-				</section>
-			</div>
+			</section>
 		</main>
 		
 		<footer class="page-footer">
