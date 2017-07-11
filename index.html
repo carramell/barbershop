@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Barbershop</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/normalize.css">
 	</head>
@@ -11,24 +12,26 @@
 		<header class="page-header">
 			<h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 			<div class="page-header__logo">
-				<img src="./img//logo/logo.svg" 
-				width="370px" height="153px" alt="Барбершоп «Бородинский»">
-			</div>
+			  <a href="index.html">
+					<img src="img/logo/logo-mobile.svg" alt="Барбершоп «Бородинский»">
+				</a>
+			</div> 
+			</a>
 			<nav class="main-nav  main-nav--closed  main-nav--nojs">
 				<button class="main-nav__toggle" type="button">Открыть меню</button>
 				<div class="main-nav__wrapper">
 					<ul class="main-nav__items">
 						<li class="main-nav__item  main-nav__item--active"><a>Главная</a></li>
-						<li class="main-nav__item"><a href="">Наши Работы</a></li>
+						<li class="main-nav__item"><a href="portfolio.html">Наши Работы</a></li>
 						<li class="main-nav__item"><a href="form.html">Записаться</a></li>
 						<li class="main-nav__item"><a href="">Контакты</a></li>
-						<li class="main-nav__item"><a href=""></a></li>
+						<li class="main-nav__item"><a href="">Адрес</a></li>
 					</ul>
 					<ul class="main-nav__user-items">
 						<li class="main-nav__user-item"><a href="" class="main-nav__user-login">Вход</a></li>
 					</ul>
 					<!-- pop-up -->
-					<div class="log-in">
+					<!-- <div class="log-in">
 						<h2 class="log-in__title  log-in__title--size">Личный кабинет</h2>
 						<p class="log-in__info  log-in__info-size">Введите свой логин и пароль, чтобы войти</p>
 						
@@ -42,7 +45,7 @@
 							
 							<button type="submit" class="form-btn  log-form__submit">Войти в личный кабинет</button>
 						</form>
-					</div>
+					</div> -->
 
 				</div> 
 			</nav>
@@ -58,12 +61,16 @@
 			</header>
 			<table class="stats__items">
 				<tr>
-					<td class="stats__value">1500<sup>*</sup></td>
+					<td class="stats__value">1 500<sup>*</sup></td>
 					<td class="stats__field">рублей<br> вложений</td>
 				</tr>
 				<tr>
-					<td class="stats__value">7200</td>
+					<td class="stats__value">7 200</td>
 					<td class="stats__field">cекунд <br> времени мастера</td>
+				</tr>
+				<tr>
+					<td class="stats__value">90 000</td>
+					<td class="stats__field">постриженных <br> волос</td>
 				</tr>
 				<tr>
 					<td class="stats__value">500 000<sup>*</sup></td>
@@ -160,6 +167,8 @@
 					<a class="btn page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
 				</p>
 			</div>
-		</footer>	
+		</footer>
+
+		<script src='index.js'></script>	
 	</body>
 </html>
