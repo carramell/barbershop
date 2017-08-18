@@ -8,14 +8,15 @@
 		<link rel="stylesheet" href="css/normalize.css">
 	</head>
 	
-	<body>
+	<body class="inner-page">
 		<header class="page-header">
 			<h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 			<div class="page-header__logo">
-				<a href="index.html">
+			  <a href="index.html">
 					<img src="img/logo/logo-mobile.svg" alt="Барбершоп «Бородинский»">
 				</a>
-			</div>
+			</div> 
+			</a>
 			<nav class="main-nav  main-nav--closed  main-nav--nojs">
 				<button class="main-nav__toggle" type="button">Открыть меню</button>
 				<div class="main-nav__wrapper">
@@ -27,68 +28,87 @@
 						<li class="main-nav__item"><a href="">Адрес</a></li>
 					</ul>
 					<ul class="main-nav__user-items">
-						<li class="main-nav__user-item"><a href="" class="main-nav__user-login">Вход</a></li>
+						<li class="main-nav__user-item" id="login"> <a href="" class="main-nav__user-login">Вход</a></li>
 					</ul>
-					<!-- <div class="log-in">
+				 <div class="log-in">
+				 		<button type="button" class="modal-content-close" id="login-close">Закрыть</button>
 						<h2 class="log-in__title">Личный кабинет</h2>
-						<p class="log-in__info ">Введите свой логин и пароль, чтобы войти</p>
+						<p class="log-in__info">Введите свой логин и пароль, чтобы войти</p>
 						
 						<form action="" class="log-form">
-							<input type="login" class="log-form__input" placeholder="Логин" required=''>
-							<input type="password" class="log-form__input" placeholder="Пароль" required=''>
-							<label class="log-form__remember">
-								<input type="radio"> Запомнить меня
-							</label>
-							<a href="#" class="log-form__forget">Я забыл Пароль!</a>
-							
-							<button type="submit" class="form-btn  log-form__submit">Войти в личный кабинет</button>
+							<input type="login" class="log-form__input  log-form__input--login" placeholder="Логин" required=''>
+							<input type="password" class="log-form__input  log-form__input--password" placeholder="Пароль" required=''>
+							<div class="log-form__remember-items">
+								<label class="log-form__remember-item  log-form__remember-item--checkbox">
+									<input type="radio"> Запомнить меня
+								</label>
+								<a href="#" class="log-form__remember-item  log-form__remember-item--link">Я забыл Пароль!</a>
+							</div>
+							<input type="submit" class="form-btn" value="Войти">
 						</form>
-					</div> -->
+					</div> 
+
 				</div> 
 			</nav>
 		</header>
-		
 		<main class="inner-page">
-			<div class="portfolio">
-				<div class="portfolio__wrapper">
-					<h2 class="portfolio__title">Наши работы</h2>
-					<a href="index.html" class="btn  to-main">На главную</a>
-					<ul class="portfolio__items">
-						<li class="portfolio__item">
-							<img src="" alt="">
-							<h3>Лжепётр Мчиславский</h3>
-							<p>Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
-							<span class="instruments  instruments--haircut">Стрижка</span>
-							<span class="instruments  instruments--shave">Бритье</span>
-							<span class="instruments  instruments--mustache">Усы</span>
-						</li>
-						<li class="portfolio__item">
-							<img src="" alt="">
-							<h3>Саша Мальцев</h3>
-							<p>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
-							<span class="instruments  instruments--haircut">Стрижка</span>
-						</li>
-						<li class="portfolio__item">
-							<img src="" alt="">
-							<h3>Владимир Иваныч</h3>
-							<p>К зимнему сезону — готов!</p>
-							<span class="instruments  instruments--beard">Борода</span>
-							<span class="instruments  instruments--mustache">Усы</span>
-						</li>
-						<li class="portfolio__item">
-							<img src="" alt="">
-							<h3>Винстон Синий</h3>
-							<p>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!Стрижка</p>
-							<span class="instruments  instruments--haircut">Стрижка</span>
-						</li>
-					</ul>
-				</div>	
-			</div>
-			
-			<div class="price">
+			<div class="inner-page__wrapper">
+				<div class="portfolio">
+						<h2 class="portfolio__title">Наши работы</h2>
+						<a href="index.html" class="btn  to-main">На главную</a>
+						<ul class="portfolio__items">
+							<li class="portfolio__item">
+								<img class="worker" src="img/portfolio/photo-1-desktop.jpg" alt="">
+								<span class="worker__title">РАБОТА МЕСЯЦА</span>
+								<div class="portfolio__item-desctiption">	
+									<h3>Лжепётр Мчиславский</h3>
+									<p>Где я только ни стригся, но так как делаете это вы — не умеет никто другой! Еще раз спасибо и до скорого!</p>
+									<div class="instruments">
+										<span class="instrument  instrument--haircut">Стрижка</span>
+										<span class="instrument  instrument--shave">Бритье</span>
+										<span class="instrument  instrument--mustache">Усы</span>
+									</div>
+								</div>	
+							</li>
+							<li class="portfolio__item">
+								<img class="worker-second" src="img/portfolio/photo-2-desktop.jpg" alt="">
+								<div class="portfolio__item-desctiption">	
+									<h3>Саша Мальцев</h3>
+									<p>Попросил омолодить и омолодили! Кто теперь скажет, что мне 45? </p>
+									<div class="instruments">
+										<span class="instrument  instrument--haircut">Стрижка</span>
+									</div>	
+								</div>	
+							</li>
+							<li class="portfolio__item">
+								<img class="worker-second" src="img/portfolio/photo-3-desktop.jpg" alt="">
+								<div class="portfolio__item-desctiption">	
+									<h3>Владимир Иваныч</h3>
+									<p>К зимнему сезону — готов!</p>
+									<div class="instruments">
+										<span class="instrument  instrument--beard">Борода</span>
+										<span class="instrument  instrument--mustache">Усы</span>
+									</div>
+								</div>	
+							</li>
+							<li class="portfolio__item">
+								<img class="worker-second" src="img/portfolio/photo-4-desktop.jpg" alt="">
+								<div class="portfolio__item-desctiption">	
+									<h3>Винстон Синий</h3>
+									<p>Как только заростаю и волосы начинают мешать видеть — бегом в Бородинский!</p>
+									<div class="instruments">
+										<span class="instrument  instrument--haircut">Стрижка</span>
+									</div>
+								</div>	
+							</li>
+						</ul>
+				</div>
+			</div>			
+		<div class="price">
 				<div class="price__wrapper">
 						<h2 class="price__title">ПРЕЙСКУРАНТ</h2>
-						<table class="price__table">
+						<div class="price-watch__wrapper">	
+							<table class="price__table">
 							<tr>
 								<td>1</td>
 								<td>Классическая стрижка</td>
@@ -119,11 +139,15 @@
 								<td>с мытьем головы</td>
 								<td>1 000 руб.</td>
 							</tr>
-						</table>
+							</table>
 						
-						<p class="price_discount">C 10:00 до 14:00 скидка 20%</p>
+							<div class="watch">
+								<img src="img/portfolio/clock.svg" alt="">
+								<p class="price_discount">C 10:00 до 14:00 скидка 20%</p>
+							</div>
+						</div>		
 				</div>
-			</div>
+		</div>
 		</main>
 		
 		<footer class="page-footer">
@@ -142,10 +166,14 @@
 				</p>
 				<p class="page-footer__copyright">
 					Разработано:
-					<a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+					<a class="btn  page-footer__copyright-link" href="">Vrezh</a>
 				</p>
 			</div>
 		</footer>	
+		<div class="modal-overlay">
+			
+		</div>
+
 		<script src='index.js'></script>
 	</body>
 </html>

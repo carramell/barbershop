@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
 		<title>Barbershop</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
@@ -8,14 +9,15 @@
 		<link rel="stylesheet" href="css/normalize.css">
 	</head>
 	
-	<body>
+	<body class="inner-page">
 		<header class="page-header">
 			<h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
 			<div class="page-header__logo">
-				<a href="index.html">
+			  <a href="index.html">
 					<img src="img/logo/logo-mobile.svg" alt="Барбершоп «Бородинский»">
 				</a>
-			</div>
+			</div> 
+			</a>
 			<nav class="main-nav  main-nav--closed  main-nav--nojs">
 				<button class="main-nav__toggle" type="button">Открыть меню</button>
 				<div class="main-nav__wrapper">
@@ -27,70 +29,93 @@
 						<li class="main-nav__item"><a href="">Адрес</a></li>
 					</ul>
 					<ul class="main-nav__user-items">
-						<li class="main-nav__user-item"><a href="" class="main-nav__user-login">Вход</a></li>
+						<li class="main-nav__user-item" id="login"> <a href="" class="main-nav__user-login">Вход</a></li>
 					</ul>
-					<!-- <div class="log-in">
+				 <div class="log-in">
+				 		<button type="button" class="modal-content-close" id="login-close">Закрыть</button>
 						<h2 class="log-in__title">Личный кабинет</h2>
-						<p class="log-in__info ">Введите свой логин и пароль, чтобы войти</p>
+						<p class="log-in__info">Введите свой логин и пароль, чтобы войти</p>
 						
 						<form action="" class="log-form">
-							<input type="login" class="log-form__input" placeholder="Логин" required=''>
-							<input type="password" class="log-form__input" placeholder="Пароль" required=''>
-							<label class="log-form__remember">
-								<input type="radio"> Запомнить меня
-							</label>
-							<a href="#" class="log-form__forget">Я забыл Пароль!</a>
-							
-							<button type="submit" class="form-btn  log-form__submit">Войти в личный кабинет</button>
+							<input type="login" class="log-form__input  log-form__input--login" placeholder="Логин" required=''>
+							<input type="password" class="log-form__input  log-form__input--password" placeholder="Пароль" required=''>
+							<div class="log-form__remember-items">
+								<label class="log-form__remember-item  log-form__remember-item--checkbox">
+									<input type="radio"> Запомнить меня
+								</label>
+								<a href="#" class="log-form__remember-item  log-form__remember-item--link">Я забыл Пароль!</a>
+							</div>
+							<input type="submit" class="form-btn" value="Войти">
 						</form>
-					</div> -->
+					</div> 
+
 				</div> 
 			</nav>
 		</header>
-		
-		<main class="inner-page">
+		<main class="inner-page__wrapper">
 			<section class="request">
-				<h1 class="form__title">Запись на стрижку</h1>
+				<h1 class="request__title">Запись на стрижку</h1>
 				<a href="index.html" class="btn  to-main">На главную</a>
-			
 				<form action="" class="request__form">
 					<div class="about">
-						<div class="about__wrapper">
+						<div class="about__name">
 							<input type="text" class="about__item  about__item--name" required='' placeholder="Имя">
 							<input type="text" class="about__item  about__item--name" required='' placeholder="Фамилия">
 							<input type="text" class="about__item  about__item--name" required='' placeholder="Отчество">
-							<input type="phone" class="about_item  about__item--phone" required='' placeholder="Контактный телефон">
-							<input type="mail" class="about__item  about__item--mail" required='' placeholder="Контактный e-mail">
-							<textarea class="about__item  about__item--textarea"> Доп.информация для мастера </textarea>
 						</div>
+						<div class="about__phone">
+							<input type="phone" class="about__item  about__item--phone" required='' placeholder="Контактный телефон">
+							<input type="mail" class="about__item  about__item--mail" required='' placeholder="Контактный e-mail">
+						</div>
+						<textarea class="about__item  about__item--textarea" placeholder="Доп.информация для мастера"> </textarea>
 					</div>
-					
 					<div class="choice">
 						<div class="choice__wrapper">
-							<h2 class="choice__title">Выберите модель бороды:</h2>
-							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='admiral' name='beard'>адмирал</label>
-							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='lumberjack' name='beard'>лесоруб</label>
-							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='polar' name='beard'>полярник</label>
-							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='boyar' name='beard'>боярин</label>
-							<label class="choice__item"><input type="radio" class="choice__item-radio  choice__item-radio--form" value='sapient' name='beard'>мудрец</label>
+							<div class="choice__title-wrapper">
+								<h2 class="choice__title">Выберите модель бороды:</h2>
+							</div>
+							<div class="choice__items">	
+								<label class="choice__item  choice__item--admiral"><input type="radio" class="choice__item-radio" value='admiral' name='beard'><br>адмирал</label>
+								<label class="choice__item  choice__item--lumber"><input type="radio" class="choice__item-radio" value='lumberjack' name='beard'><br>лесоруб</label>
+								<label class="choice__item  choice__item--polar"><input type="radio" class="choice__item-radio" value='polar' name='beard'><br>полярник</label>
+								<label class="choice__item  choice__item--boyar"><input type="radio" class="choice__item-radio" value='boyar' name='beard'><br>боярин</label>
+								<label class="choice__item  choice__item--sapient"><input type="radio" class="choice__item-radio" value='sapient' name='beard'><br>мудрец</label>
+							</div>	
 						</div>
 					</div>
-
 					<div class="extra">
 						<div class="extra__wrapper">
 							<h2 class="extra__title">Дополнительные услуги:</h2>
-							
-							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Подкрасить бороду</label>
-							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Убрать седину</label>
-							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Подровнять виски</label>
-							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Причесать бороду</label>
-							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Накрутить усы</label>
-							<label for="" class="extra__item"><input type="checkbox" class="extra__item-checkbox extra__item-checkbox--form">Отполировать лысину</label>
+							<div class="extra__items">
+								<label for="" class="extra__item">
+									<input type="checkbox"> 
+									<span class="extra__item--title">Подкрасить бороду</span>
+								</label>
+								<label for="" class="extra__item">
+									<input type="checkbox"> 
+									<span class="extra__item--title">Убрать седину</span>
+								</label>
+								<label for="" class="extra__item">
+									<input type="checkbox"> 
+									<span class="extra__item--title">Подровнять виски </span>	
+								</label>
+								<label for="" class="extra__item">
+									<input type="checkbox"> 
+									<span class="extra__item--title">Причесать бороду </span> 
+								</label>
+								<label for="" class="extra__item">
+									<input type="checkbox"> 
+									<span class="extra__item--title">Накрутить усы </span> 
+								</label>
+								<label for="" class="extra__item">
+									<input type="checkbox"> 
+									<span class="extra__item--title">Отполировать лысину </span> 
+								</label>
+							</div>
 							<button class="form-btn  note-form-submit">ОТПРАВИТЬ ЗАЯВКУ</button>
 						</div>
 					</div>
 				</form>
-					
 			</section>
 		</main>
 		
@@ -99,21 +124,26 @@
 				<p class="page-footer__contacts">
 					<b>Барбершоп «Бородинский»</b><br>
 					г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
-					<a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
+					<a href="+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span> +7 (812) 555-66-66</a>
 				</p>
 				<p class="page-footer__social">
+					Давайте дружить!
 					<span class="social-links">
-						<a class="social-link  social-link--vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-						<a class="social-link  social-link--fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-						<a class="social-link  social-link--in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+						<a class="social-link  social-link--vk" href="https://vk.com/id410923306">Мы в Вконтакте</a>
+						<a class="social-link  social-link--fb" href="https://web.facebook.com/profile.php?id=100009467475021">Мы в Фейсбуке</a>
+						<a class="social-link  social-link--in" href="https://instagram.com/hovanisyan.vrezh">Мы в Инстаграме</a>
 					</span>
 				</p>
 				<p class="page-footer__copyright">
 					Разработано:
-					<a class="btn  page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+					<a class="btn page-footer__copyright-link" href="https://instagram.com/hovanisyan.vrezh">Vrezh</a>
 				</p>
 			</div>
 		</footer>
+
+		<div class="modal-overlay">
+			
+		</div>
 		<script src='index.js'></script>	
 	</body>
 </html>

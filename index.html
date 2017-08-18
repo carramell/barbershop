@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta charset="utf-8">
 		<title>Barbershop</title>
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
@@ -28,21 +29,23 @@
 						<li class="main-nav__item"><a href="">Адрес</a></li>
 					</ul>
 					<ul class="main-nav__user-items">
-						<li class="main-nav__user-item"><a href="" class="main-nav__user-login">Вход</a></li>
+						<li class="main-nav__user-item" id="login"> <a href="" class="main-nav__user-login">Вход</a></li>
 					</ul>
 				 <div class="log-in">
+				 		<button type="button" class="modal-content-close" id="login-close">Закрыть</button>
 						<h2 class="log-in__title">Личный кабинет</h2>
 						<p class="log-in__info">Введите свой логин и пароль, чтобы войти</p>
 						
 						<form action="" class="log-form">
-							<input type="login" class="log-form__input" placeholder="Логин" required=''>
-							<input type="password" class="log-form__input" placeholder="Пароль" required=''>
-							<label class="log-form__remember">
-								<input type="radio"> Запомнить меня
-							</label>
-							<a href="#" class="log-form__forget">Я забыл Пароль!</a>
-						
-							<input type="submit" class="form-btn" value="Войти в личный кабинет">
+							<input type="login" class="log-form__input  log-form__input--login" placeholder="Логин" required=''>
+							<input type="password" class="log-form__input  log-form__input--password" placeholder="Пароль" required=''>
+							<div class="log-form__remember-items">
+								<label class="log-form__remember-item  log-form__remember-item--checkbox">
+									<input type="radio"> Запомнить меня
+								</label>
+								<a href="#" class="log-form__remember-item  log-form__remember-item--link">Я забыл Пароль!</a>
+							</div>
+							<input type="submit" class="form-btn" value="Войти">
 						</form>
 					</div> 
 
@@ -187,6 +190,10 @@
 				</p>
 			</div>
 		</footer>
+
+		<div class="modal-overlay">
+			
+		</div>
 
 		<script src='index.js'></script>	
 	</body>
